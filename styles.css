@@ -1,0 +1,320 @@
+body {
+  padding: 25px;
+  margin: 10px;
+  background: lightcyan;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+h2 {
+  margin: 0 0 1rem 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+.verb-link, .francais {
+  text-decoration: none;
+}
+
+.verb-link:hover, .francais:hover {
+  text-decoration: underline; 
+  color: inherit; 
+}
+
+.thinking {
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 20px;
+  border: 5px solid #9aa;
+  word-spacing: 0.3em; 
+}
+
+li {
+  margin: 8px;
+}
+
+ul {
+  background-color: rgba(192, 192, 192, 0.2);
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+
+.ora-list5 {
+  border-radius: 8px;
+  padding: 10px 20px;
+  max-width: 600px;
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+.ora-list5 li {
+  padding: 8px 0;
+  font-size: 17px;
+}
+
+.title {
+  color: #5C6AC4;
+  background-color: lightblue;
+  text-align: center;
+  box-shadow: 3px 3px 8px;
+  padding: 0.5rem;
+}
+
+.process {
+  display: block;
+  text-decoration: none;
+  background: lightblue;
+  height: 25px;
+  width: 60px;
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  margin: auto;
+  color: #5C6AC4;
+  box-shadow: 3px 3px 8px;
+  transition: all 0.3s ease;
+}
+
+.process:hover {
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
+}
+
+button {
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+
+.botton-modern:hover {
+  background-color: #9aa;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  
+} 
+
+.back-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #3c6e9c; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 50px; 
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #4492dc; 
+  transform: translateX(-3px); 
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.back-button:active {
+  transform: translateX(0);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15); 
+}
+
+.container {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  margin: 40px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  align-items: center;
+}
+
+.left-content, .cent-content1, .cent-content2, .cent-content3, .cent-content4, .cent-content5 {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cent-content1, .cent-content2, .cent-content3, .cent-content4, .cent-content5 {
+  text-align: center;
+  font-size: 22px;
+  margin: 0 auto;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.tit {
+  font-family: 'Lora', serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+.sub {
+  font-size: 25px;
+  color: #0b0b0b;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 450px;
+  text-align: justify;
+}
+
+.custom-list {
+  list-style: none;
+  counter-reset: li-counter;
+  margin-bottom: 100px;
+  margin-left: 70px;
+  padding-left: 0;
+  background: transparent;
+}
+
+.custom-list li {
+  counter-increment: li-counter;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background: transparent; 
+}
+
+.custom-list li::before {
+  content: counter(li-counter);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background: rgb(101, 181, 181); 
+  color: white; 
+  font-weight: 400;
+}
+    
+.girlf {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 70px;
+}
+
+.classfrance, img-right {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 70px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  background: lightcyan;
+}
+
+/* ========== TABLA DE PRONOMBRES ========== */
+table.pronom {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 1.5rem auto;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+table.pronom th,
+table.pronom td {
+  border: 1px solid #ddd;
+  padding: 12px 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table.pronom thead {
+  background: linear-gradient(135deg, #4a6fa5 0%, #2c3e50 100%);
+  color: white;
+}
+
+table.pronom thead th {
+  font-weight: 600;
+  padding: 14px 10px;
+}
+
+table.pronom tbody th {
+  background-color: #eef4f9;
+  color: #2c3e50;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 16px;
+}
+
+table.pronom tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table.pronom tbody tr:hover {
+  background-color: #bbdefb;
+  transition: background-color 0.25s ease;
+}
+
+.symbol {
+  font-size: 1.1em;
+  margin-right: 4px;
+}
+
+/* ========== DISEÑO MÓVIL ========== */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+    margin: 0;
+  }
+
+  .container {
+    flex-direction: column; 
+    margin: 10px auto;
+    width: 95%;
+  }
+
+  .left-content, .cent-content5 {
+    padding: 25px 15px;
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .cent-content5 {
+    font-size: 18px;
+  }
+
+  .custom-list {
+    margin-left: 0; 
+    margin-bottom: 50px;
+  }
+
+  .sub {
+    text-align: center;
+    font-size: 19px;
+  }
+
+  .girlf {
+    margin: 0; 
+    max-width: 80%; 
+  }
+
+  .back-button {
+    position: static;
+    margin: 10px 0; 
+  }
+
+  table.pronom th,
+  table.pronom td {
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+}
